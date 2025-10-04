@@ -48,13 +48,18 @@
   left: -300px;
 }
 
+
+.wrapper.font2  .item h4{
+  font-size: 30px;
+}
+
+
 .item h4 {
   font-size: 40px;
   text-transform: uppercase;
   animation: text_animation 1s ease-in-out infinite;
 
-  color: #ffffff;
-  /* -webkit-text-stroke: 1.5px black; */
+  color: #ffffff; 
 }
 
 .slide-container.footer_slide h4 {
