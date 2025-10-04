@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/favicon2.png" />
+
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+
+    <title>$Uptober </title>
+  </head>
+
+  <body class="flex justify-center">
+   
+    <div
+      class="container_site w-full h-auto relative max-w-[100%]  overflow-hidden flex_center flex-col pt-[40px] gap-[80px] xl:gap-[110px] z-10"
+    >
+      <!-- navbar -->
+      <nav
+        class="w-full z-[8999] justify-center h-[30px] xl:h-[70px] relative left-0 top-0 max-w-[100%] flex items-center px-[.5rem] xl:px-[2rem]" data-aos="fade-down" data-aos-duration="900"
+        data-aos-delay="100"
+      >
+        <div
+          class="nav_container px-[1rem] md:px-[2rem] flex items-center relative h-[70%] justify-between w-full max-w-[100%] xl:max-w-[1500px] nav_shadow rounded-lg md:rounded-[30px] max-lg:px-6"
+        >
+          <div
+            class="left flex relative z-10 justify-center items-center text_nav text-[15px] md:text-[30px]"
+          >
+            <div class="logo flex_center gap-2">
+              <span
+                class="w-[40px] md:w-[70px] aspect-square  flex_center overflow-hidden bg-blue-400 rounded-full"
+              >
+                <img
+                  src="./assets/images/uptober.png"
+                  alt="logo"
+                  class="w-full"
+                />
+              </span>
+              <p class="text-[14px] lg:text-lg">Uptober</p>
+            </div>
+          </div>
+
+          <div
+            class="center absolute left-[50%] translate-x-[-50%] top-0 h-full w-[100%] z-0 justify-center flex items-center text-black"
+          >
+            <ul
+              class="flex items-center absolute opacity-0 xl:opacity-100 xl:relative gap-[1rem] link_none"
+            >
+              <li class="list-none">
+                <a href="#about" class="text_nav text-[18px]">
+                  About
+                </a>
+              </li>
+
+              <li class="list-none">
+                <a href="#uptobermap" class="text_nav text-[18px]">
+                  Uptobermap
+                </a>
+              </li>
+ 
+            </ul>
+          </div>
+
+          <div class="right relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"  >
+            <a
+              href="#"
+              class="nav-btn relative w-[70px] h-[33px] md:w-[135px] uppercase md:h-[51px]  md:rounded-[10px] text-[10px] md:text-sm xl:text-[18px] flex justify-center items-center duration-300 text-white font-semibold  "
+            >
+              Join us
+            </a>
+
+            <a
+              target="_blank"
+              href="https://x.com/"
+              class="rounded-full h-[50px] aspect-square bg-black flex_center duration-150 hover:scale-110 hidden lg:flex icon-hover"
+            >
+              <img
+                src="./assets/images/twitter.svg"
+                alt="twitter"
+                class="w-[70%]"
+              />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://web.telegram.org"
+              class="rounded-full h-[50px] aspect-square bg-black flex_center duration-150 hover:scale-110 hidden lg:flex icon-hover"
+            >
+              <img
+                src="./assets/images/telegram.svg"
+                alt="telegram"
+                class="w-[80%]"
+              />
+            </a>
+
+                <a
+              target="_blank"
+              href="https://ape.store/"
+              class="rounded-full h-[50px] aspect-square bg-black flex_center duration-150 hover:scale-110 hidden lg:flex icon-hover"
+            >
+              <img
+                src="./assets/images/apestore.png"
+                alt="apestore"
+                class="w-[90%]"
+              />
+            </a>
+
+           
+
+            <div class="nav-btn pl-2 py-2 relative flex_center min-[1025px]:hidden min-[1025px]:absolute">
+              <div class="menu-button relative ml-1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu -->
+        <div
+          class="menu nav-btn menu_drop nav_shadow absolute hidden top-[300%]  right-[3rem] w-[80%] flex justify-center  h-auto py-4 text-white"
+        >
+          <ul
+            class="flex items-center relative gap-[2rem] link_none flex-col justify-center"
+          > 
+            <li class="list-none">
+              <a href="#about" class="text_nav text-[17px] md:text-[20px]"
+                >About</a
+              >
+            </li>
+             <li class="list-none">
+                <a href="#uptobermap" class="text_nav text-[18px]">
+                  Uptobermap
+                </a>
+              </li>
+            <li class="w-full flex_center gap-4 flex lg:hidden">
+              <a
+                target="_blank"
+                href="https://x.com/"
+                class="rounded-full h-[40px] aspect-square bg-[#fff] flex_center duration-150 hover:scale-110 icon-hover"
+              >
+                <img
+                  src="./assets/images/twitter.svg"
+                  alt="twitter"
+                  class="w-[70%]"
+                />
+              </a>
+              <a
+                target="_blank"
+                href="https://web.telegram.org"
+                class="rounded-full h-[40px] aspect-square bg-[#fff] flex_center duration-150 hover:scale-110 icon-hover"
+              >
+                <img
+                  src="./assets/images/telegram.svg"
+                  alt="telegram"
+                  class="w-[80%]"
+                />
+              </a> 
+              <a
+                target="_blank"
+                href="https://ape.store/"
+                class="rounded-full h-[40px] aspect-square bg-[#fff] flex_center duration-150 hover:scale-110 icon-hover"
+              >
+                <img
+                  src="./assets/images/apestore.png"
+                  alt="apestore"
+                  class="w-[80%]"
+                />
+              </a> 
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <section
+        id="home"
+        class="relative  w-[90%] flex_center gap-7 flex-wrap flex-col xl:max-w-[2000px] xl:mt-[-150px] max-lg:pb-20"
+      >
+        <div class="relative w-full md:w-[60%] xl:w-[65%] flex_center flex-wrap pt-2 lg:pt-[20px] pb-[10px] z-10" >
+          <div class="img w-auto">
+            <img
+            src="./assets/images/uptoberGlow.png"
+            alt="hero"
+            class="w-[80%] lg:w-[500px] max-md:ml-[10%]"
+          />
+          </div>
+          <div
+            class="relative lg:absolute  xl:right-[-140px] lg:top-[50%] bg-white border-black border-2 rounded-3xl w-[400px] h-auto flex_center flex-col p-4 gap-5 hidden"  data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200"
+          >
+            <h1
+              class="text-center text-[19px] md:text-[22px] leading-[1] max-md:hidden  font-semibold"
+            >
+              $UPTOBER
+            </h1>
+            <p class="text-center">
+              Magic Money Machine ($UPTOBER) is a USD-pegged stablecoin you can
+              mint, trade, and use across DeFi.
+            </p>
+          </div>
+        </div>
+ 
+
+        <p class="absolute right-0 top-0 lg:top-[10%] text-[18px] lg:text-[22px]" data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-delay="100">TOKEN ERC-20</p>
+
+        <div class="absolute bottom-[-20px] md:bottom-0 w-full h-[200px flex justify-between items-center max-md:flex-col gap-1">
+          <p class="text-[13px] lg:text-[23px]" data-aos="fade-right"
+        data-aos-duration="900"
+        data-aos-delay="100">Movimiento de traders,<br class="max-lg:hidden"> holders y creyentes del mercado</p>
+
+          <div
+            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative " data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-delay="100"
+          >
+            <div
+              class="w-full h-full flex_center gap-4 z-10 relative "
+            >
+          
+              <button
+                class="copy-btn  aspect-square w-[40px] lg:w-[50px] cursor-pointer copy_address bg-[#4676FF] rounded-full flex_center"
+              >
+                <img src="./assets/images/copyIcon.svg" alt="copy w-[50%]" />
+              </button>
+                <p
+                data-set="00000000000000000000000000"
+                class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[14px] lg:text-[16px] text-black"
+              >
+                000000....0000dEaD
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-slider-container relative z-0 w-full h-[70px] left-0 top-0 mt-[-20px]">
+          <div class="slide-container   relative w-full h-full flex_center">
+            <div class="wrapper">
+                <div class="item item1">
+                  <h4>$UPTOBER</h4>
+                </div> 
+                <div class="item item2" >
+                  <h4 style="animation-delay: .3s;">$UPTOBER</h4>
+                </div> 
+                <div class="item item3">
+                  <h4>$UPTOBER</h4>
+                </div> 
+                <div class="item item4"  >
+                  <h4 style="animation-delay: .3s;">$UPTOBER</h4>
+                </div> 
+                <div class="item item5">
+                  <h4>$UPTOBER</h4>
+                </div> 
+                <div class="item item6">
+                  <h4 style="animation-delay: .3s;">$UPTOBER</h4>
+                </div> 
+                <div class="item item7">
+                  <h4>$UPTOBER</h4>
+                </div> 
+                <div class="item item8">
+                  <h4 style="animation-delay: .3s;">$UPTOBER</h4>
+                </div> 
+                <div class="item item9">
+                  <h4>$UPTOBER</h4>
+                </div> 
+                <div class="item item10">
+                  <h4 style="animation-delay: .3s;">$UPTOBER</h4>
+                </div>  
+            </div>
+          </div> 
+        </div>
+
+      <!-- about -->
+      <section
+        id="about"
+        class="w-[90%] flex_center gap-4 md:gap-7 flex-wrap xl:max-w-[2000px]"
+      >
+        <div
+          class="w-full md:w-[60%] xl:w-[45%] flex_center relative py-[10px] overflow-hidden"
+        >
+          <img
+            src="./assets/images/uptober.png"
+            alt="about img"
+            class="w-full relative z-0"   data-aos="fade-right" data-aos-duration="900" data-aos-delay="100"
+          /> 
+        </div>
+
+        <div
+          class="w-[90%] md:w-[60%] xl:w-[45%] flex_center flex-col gap-4 text-[#000]"  data-aos="fade-left" data-aos-duration="900" data-aos-delay="100"
+        >
+          <h2 class="w-full text-center lg:text-left text-[60px] lg:leading-[1] milkynice thin_stroke">
+            About
+          </h2>
+          <p class="text-[17px] lg:text-[22px]">
+            Based uptober the most bullish cat coin ever created in the greatest bullrun cycle. $uptober is a whole cult of degens that believe in the bull market and altseason , holding and buying the dip every dump during summer waiting the god candle pump of the last months of the year and starting the cycle with uptober
+          </p>
+        </div>
+      </section>
+
+        <!-- uptobermap -->
+      <section
+        id="uptobermap"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px]"
+      >
+        <div class="howto flex_center flex-col w-full relative gap-4">
+          <!-- title -->
+          <h2 class="text-[50px] lg:text-[70px] font-bold milkynice thin_stroke" 
+       data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+            Uptobermap
+          </h2>
+
+          <div class="w-full flex_center flex-wrap gap-6 px-4">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto flex  gap-4"  data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="200"> 
+              <div class="path w-[90%] flex flex-col gap-4 ml-10 relative py-4">
+                <div class="div w-full">
+                  <h3 class="w-full text-[17px] lg:text-[20px]"> DEX update</h3>
+              updates on decentralized exchange. </div> 
+               <div class="div w-full">
+                <h3 class="w-full text-[17px] lg:text-[20px]"> Activate volume bot</h3>
+                activates the bot to increase trading volume. 
+              </div>
+              <div class="div w-full">
+                <h3 class="w-full text-[17px] lg:text-[20px]"> Dextools update</h3>
+                update token data on the Dextools platform. 
+              </div>
+              <div class="div w-full">
+                <h3 class="w-full text-[17px] lg:text-[20px]"> DEX ads & boosts</h3>
+                promote tokens through ads on the DEX or boost campaigns.. 
+              </div>
+              <div class="div w-full">
+                <h3 class="w-full text-[17px] lg:text-[20px]"> Telegram & X competitions/giveaways</h3>
+                community events for engagement.. 
+              </div>
+              <div class="div w-full">
+                <h3 class="w-full text-[17px] lg:text-[20px]"> $Uptober NFT collection</h3>
+                launch of an NFT collection. 
+              </div>
+
+              </div>
+            </div>  
+          </div>
+
+
+        </div>
+
+      </section>
+ 
+        <!-- tokenomics -->
+      <section
+        id="tokenomics"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px] hidden"
+      >
+        <div class="howto flex_center flex-col w-full relative gap-4">
+          <!-- title -->
+          <h2 class="text-[50px] lg:text-[70px] font-bold milkynice" 
+      data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+            Tokenomics
+          </h2>
+
+          <div class="w-full flex_center flex-wrap gap-6 px-4">
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto"  data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="200">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 📊 Supply</h3>
+              - Circulating Supply: Dynamic, depends on minted and burned tokens
+              <br>
+              - Max Supply: Unlimited (backed by collateralized assets)
+              <br>
+              - Stability: Maintained through over-collateralization and liquidation mechanisms
+            </div>
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto" data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="300">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> 💠 Distribution</h3>
+              - No pre-mine or team allocation.
+              <br>
+              - All $UPTOBER enters circulation only when users deposit supported assets as collateral.
+              <br>
+              - Fair and transparent minting process through the Abracadabra protocol.
+
+            </div>
+            <div class="token-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[500px] h-auto" data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="300">
+              <h3 class="w-full text-center text-[20px] lg:text-[30px]"> ⚡ Utility</h3>
+             - Stable medium of exchange across DeFi platforms.
+             <br>
+             - Trading pair on multiple DEX and CEX.
+             <br>
+             - Borrowing & lending opportunities. 
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <!-- contact, supply, liqiu, tax -->
+      <section class="w-[90%] flex_between flex-wrap gap-4 md:gap-7 max-xl:justify-center xl:max-w-[1500px] text-black hidden" >
+
+        <div class="w-full flex_center  " data-aos="fade-up"  data-aos-duration="900" data-aos-delay="200">
+          <div
+            class="contract w-full md:w-[45%] lg:w-auto max-w-[1000px] h-[60px] p-4 flex_center relative bg-[#CDEAF8] rounded-full"
+          >
+            <div
+              class="w-full h-full flex_center gap-7 z-10 relative "
+            >
+              <p
+                data-set="00000000000000000000000000"
+                class="copy-box__text max-w-[90%] overflow-hidden text-ellipsis text-[16px] lg:text-[20px]"
+              >
+                0000000.....00000dEaD
+              </p>
+              <button
+                class="copy-btn w-[23px] lg:w-[30px] h-auto cursor-pointer copy_address"
+              >
+                <img src="./assets/images/copyIcon.svg" alt="copy"  class="black-icon" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#CDEAF8] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300">
+          <div
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]" >
+            <p>
+              <span class="font-semibold">Supply : </span> 10 Million
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#CDEAF8] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300"
+        >
+          <div
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
+          >
+            <p><span class="font-semibold">Tax : </span>0%</p>
+          </div>
+        </div>
+
+        <div
+          class="w-[100%] md:w-[45%] xl:w-[30%] h-[60px] relative flex_center bg-[#CDEAF8] rounded-full" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="300"
+        >
+          <div
+            class="w-full flex_center gap-4 text-[17px] md:text-[23px] lg:text-[25px]"
+          >
+            <p><span class="font-semibold">LP : </span>Liquidity Burnt</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- how to buy -->
+      <section
+        id="howtobuy"
+        class="w-[100%] flex_center gap-7 flex-wrap xl:max-w-[2000px] z-20 relative hidden"
+      >
+        <div class="howto flex_center flex-col w-full relative gap-4 px-4">
+            
+          <!-- title -->
+          <h2 class=" text-[50px] lg:text-[70px] font-bold milkynice" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="100">
+            How To Buy
+          </h2>
+
+          <img src="./assets/images/howtoimg.png" alt="how to img" class="w-[100%] md:w-[50%] lg:w-[20%] rounded-3xl" 
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="100">
+
+          <!-- how to content -->
+           <div class="relative w-full flex_center gap-4 flex-wrap">
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="200">
+              <h3 class="w-full text-[20px] lg:text-[30px]"> STEP 1: Get Ethereum (ETH)</h3>
+             Buy ETH from a centralized exchange (Binance, Coinbase, Kraken, etc.) or have it in your crypto wallet (like MetaMask).
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="300">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 2: Connect Your Wallet</h3>
+            Open a DeFi platform that supports $UPTOBER (e.g., Uniswap, Curve, or Abracadabra). Connect your wallet (MetaMask, WalletConnect, etc.).
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="400">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 3: Swap ETH for $UPTOBER</h3>
+           - Choose ETH as the token you want to trade.
+           <br>
+           - Select $UPTOBER as the token you want to receive.
+           <br>
+          - Enter the amount and confirm the transaction.
+             </div>
+               <div class="how-to-box rounded-3xl bg-white box_shadow2 border-black border-2 p-4 w-full sm:w-[45%] xl:w-[20%] h-auto xl:h-[310px] 2xl:h-[280px]" data-aos="zoom-out"  data-aos-duration="900" data-aos-delay="500">
+              <h3 class="w-full text-[20px] lg:text-[30px]">STEP 4: Confirm & Store Safely</h3>
+           Once the swap is complete, $UPTOBER will appear in your wallet. Make sure you add the official contract address to track your balance correctly.
+             </div>
+           </div>
+            
+          <div
+            class="btns flex_center gap-6 carumba_font text-[18px] lg:text-[26px]" data-aos="fade-up"  data-aos-duration="900" data-aos-delay="200"
+          >
+            <a href="#"
+              class="link box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#CDEAF8] text-black flex_center"
+            >
+              $Buy
+            </a>
+
+            <a
+              href="https://www.dextools.io/app/en/ether/"
+              target="_blank"
+              class="link box_shadow border-[2px] border-black rounded-xl w-[150px] h-[55px] bg-[#CDEAF8] text-black flex_center"
+            >
+              Chart
+            </a>
+          </div>
+ 
+        </div>
+      </section>
+
+      <!-- footer -->
+        <footer class="flex_center w-full flex-col gap-7 relative mt-[-50px]  overflow-hidden  ">
+
+        <div class="absolute top-[20%] right-[10%] rotate-12 z-10 leading-[1] flex_center text-black boldShadow "
+        >   
+
+           <h4 class="mediumStroke text-[40px] lg:text-[100px] float_animation mt-[-50px] very_thin_stroke" > <span data-aos="zoom-in"
+          data-aos-duration="900"
+          data-aos-delay="100">$UPTOBER </span> </h4>
+         
+        </div>
+         
+        <!-- image -->
+         <div class="images z-30 w-full max-w-[1500px] h-auto relative flex_center flex-col max-lg:mt-[6rem]">
+          
+          <div class="flex_center w-full z-10">
+            <img src="assets/images/uptober.png" alt="characterHero" class="w-[90%] md:w-[30%] lg:w-[38%] h-auto shake_animation">
+          </div>
+          
+         <div class="w-full md:w-[50%] relative flex_center mt-[-100px] sm:mt-0 lg:mt-[-150px]">
+           <img src="assets/images/bgHero-character2.png" alt="bg hero" class="w-full h-auto relative mt-[-20px] lg:mt-[-40px]">
+
+           <!-- <img src="./assets/images/footer_text.png" alt="text footer" class="absolute h-full rotate-[5deg] top-[-10%] opacity-90"> -->
+
+           <a href="https://www.dextools.io/" rel="noopener noreferrer" target="_blank" class="absolute left-[13%] top-[21%] w-[13%] lg:w-[15%] opacity-90 hover:opacity-100 duration-100">
+            <img src="./assets/images/dex_black.png" alt="dextools" class="w-full rotate-[-10deg]">
+           </a>
+
+           <a href="https://etherscan.io/" target="_blank" class="absolute top-[21%] w-[13%] md:w-[15%] right-[13%] opacity-90 hover:opacity-100 duration-100">
+            <img src="./assets/images/etherscan_black.svg" alt="etherscan" class="w-full rotate-[10deg]">
+           </a>
+         </div>
+         </div>
+
+         <!-- rotate -->
+        <div class="bg-rotate absolute top-[20%] lg:top-[0%] w-[500px] lg:w-[50vw] max-w-[2200px] aspect-square flex_center">
+          <img src="assets/images/rotate-img.svg" alt="rotate icon" class="w-full rotate_animation">
+        </div>
+
+
+        <!-- slide -->
+        <div class="text-slider-container opacity-30 absolute z-0 w-full h-full left-0 top-[10%] lg:top-[-10%] avenir_font">
+          <div class="slide-container left-[-35%] lg:left-[-20%] absolute top-[55%] lg:top-[55%] py-3 lg:py-5 z-10 rotate-[45deg] lg:rotate-[20deg]">
+            <div class="wrapper">
+                <div class="item item1">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item2" >
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item3">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item4"  >
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item5">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item6">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item7">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item8">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item9">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item10">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div>  
+            </div>
+          </div>
+          <div class="slide-container rightSlider left-[-35%] lg:left-[-20%] absolute top-[40%] lg:top-[50%] py-3 lg:py-5 z-10 rotate-[-45deg] lg:rotate-[-20deg]">
+            <div class="wrapper">
+                <div class="item item1">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item2" >
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item3">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item4"  >
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item5">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item6">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item7">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item8">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div> 
+                <div class="item item9">
+                  <h4>UPTOBER</h4>
+                </div> 
+                <div class="item item10">
+                  <h4 style="animation-delay: .3s;">UPTOBER</h4>
+                </div>  
+            </div>
+          </div> 
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+            <div class="social relative z-10 md:w-auto flex justify-center h-full items-center gap-[1rem]"  >
+    
+            <a
+              target="_blank"
+              href="https://x.com/"
+              class="rounded-full h-[50px] aspect-square bg-[#0a0a0a] border-black border-2 flex_center duration-150 hover:scale-110"
+            >
+              <img
+                src="./assets/images/twitter.svg"
+                alt="twitter"
+                class="w-[70%]"
+              />
+            </a>
+
+            <a
+              target="_blank"
+              href="https://web.telegram.org"
+              class="rounded-full h-[50px] aspect-square bg-[#000000] border-black border-2 flex_center duration-150 hover:scale-110"
+            >
+              <img
+                src="./assets/images/telegram.svg"
+                alt="telegram"
+                class="w-[80%]"
+              />
+            </a>
+ 
+          </div>
+           <div class="by w-full">
+        <p class="text-center text-[14px] md:text-[22px]">support@uptober.com</p>
+      </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- bg -->
+    <div class="w-full h-full fixed left-0 top-0 bg-[#fdfdfd]">
+
+         <img src="./assets/images/uptoberBanner.png" alt="texture" class="absolute left-0 top-0 w-full h-full object-cover opacity-20">
+  
+     </div>
+
+    <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
